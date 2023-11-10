@@ -6,8 +6,6 @@
 
 1판의 깃허브는 [여기](https://github.com/rickiepark/GDL_code/)입니다.
 
-<img src="cover.jpeg" width=600>
-
 ## 목차
 PART 1: 생성 딥러닝 소개
 * 1장: 셍성 모델링
@@ -30,3 +28,20 @@ PART 3: 생성 모델링의 응용 분야
 * 14장: 결론
 
 각 장의 노트북에는 구글 코랩에서 실행할 수 있는 링크가 포함되어 있습니다.
+
+
+```shell
+
+onda update --all
+
+pip install tensorflow
+
+pip install keras
+
+ipython 
+
+import tensorflow as tf
+
+import keras
+
+```
