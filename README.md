@@ -32,7 +32,7 @@ PART 3: 생성 모델링의 응용 분야
 
 ```shell
 
-onda update --all
+conda update --all
 
 pip install tensorflow
 
@@ -44,4 +44,11 @@ import tensorflow as tf
 
 import keras
 
+```
+
+```shell
+conda list
+conda search "^python$"
+
+conda create -n quintic python=3.7
 ```
