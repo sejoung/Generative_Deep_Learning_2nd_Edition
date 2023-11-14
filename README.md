@@ -44,6 +44,8 @@ pip install tensorflow
 
 pip install keras
 
+pip install tensorflow-gpu 
+
 ipython 
 
 import tensorflow as tf
@@ -56,15 +58,20 @@ import keras
 conda list
 conda search "^python$"
 
-conda create -n tf python=3.11
-conda install tensorflow-gpu
-pip install tensorflow-gpu==2.9.1
-conda install keras
-conda install jupyter notebook
-python -m ipykernel install --user --name tf
+conda create -n tf python=3.9
+
+conda activate tf
+
+pip install --upgrade pip
+pip install tensorflow
+pip install tf-nightly
+pip install jupyter notebook
+pip install matplotlib
 
 
 jupyter notebook --ip=*
+
+conda deactivate
 
 conda env remove -n tf
 
@@ -73,5 +80,8 @@ conda env remove -n tf
 conda deactivate
 
 conda activate tf
+
+
+echo $LD_LIBRARY_PATH
 
 ```
