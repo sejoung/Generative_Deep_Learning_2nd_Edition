@@ -34,6 +34,12 @@ PART 3: 생성 모델링의 응용 분야
 
 conda update --all
 
+conda install tensorflow
+
+conda install keras
+
+conda install jupyter notebook
+
 pip install tensorflow
 
 pip install keras
@@ -50,5 +56,22 @@ import keras
 conda list
 conda search "^python$"
 
-conda create -n quintic python=3.7
+conda create -n tf python=3.11
+conda install tensorflow-gpu
+pip install tensorflow-gpu==2.9.1
+conda install keras
+conda install jupyter notebook
+python -m ipykernel install --user --name tf
+
+
+jupyter notebook --ip=*
+
+conda env remove -n tf
+
+
+
+conda deactivate
+
+conda activate tf
+
 ```
