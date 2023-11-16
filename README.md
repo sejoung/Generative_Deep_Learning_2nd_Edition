@@ -86,12 +86,21 @@ echo $LD_LIBRARY_PATH
 
 ```
 
+```
+services:
+  jupyter-8888:
+    image: "tensorflow/tensorflow:nightly-jupyter"
+    ports:
+      - 8888:8888
+    volumes:
+      - /Users/sejoungkim/Generative_Deep_Learning_2nd_Edition:/tf/notebooks
+
+```
 
 ```
 services:
   jupyter-8888:
-    image: "tensorflow/tensorflow:2.15.0-jupyter"
-    env_file: "env-file"
+    image: "tensorflow/tensorflow:nightly-gpu-jupyter"
     deploy:
       resources:
         reservations:
@@ -102,7 +111,6 @@ services:
     ports:
       - 8880:8888
     volumes:
-      - workspace:/workspace
-      - data:/data
+      - /repositories/Generative_Deep_Learning_2nd_Edition:/tf/notebooks
 
 ```
