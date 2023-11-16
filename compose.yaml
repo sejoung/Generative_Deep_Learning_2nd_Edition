@@ -11,4 +11,4 @@ services:
     ports:
       - 8880:8888
     volumes:
-      - /repositories/Generative_Deep_Learning_2nd_Edition
+      - /repositories/Generative_Deep_Learning_2nd_Edition:/tf/notebooks
