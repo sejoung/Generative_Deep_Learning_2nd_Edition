@@ -1,0 +1,7 @@
+services:
+  jupyter-8888:
+    image: "tensorflow/tensorflow:2.15.0-gpu-jupyter"
+    ports:
+      - 8888:8888
+    volumes:
+      - /repositories/Generative_Deep_Learning_2nd_Edition:/tf/workspace

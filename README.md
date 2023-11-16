@@ -85,3 +85,24 @@ conda activate tf
 echo $LD_LIBRARY_PATH
 
 ```
+
+
+```
+services:
+  jupyter-8888:
+    image: "tensorflow/tensorflow:2.15.0-jupyter"
+    env_file: "env-file"
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: "nvidia"
+              device_ids: ["0"]
+              capabilities: [gpu]
+    ports:
+      - 8880:8888
+    volumes:
+      - workspace:/workspace
+      - data:/data
+
+```
